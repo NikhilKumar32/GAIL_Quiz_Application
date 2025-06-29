@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.Master.cs" Inherits="GAIL_QUIZ1.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="mainmaster.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.7.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    
+    </head>
+<body>
+    <form id="form1" runat="server">
+        <%-- Header --%>
+        <div class="header">
+            <div class="logo">
+                <img src="/Content/Images/gail.png" alt="Logo" />
+                <span class="h5 mb-0">GAIL_QUIZ</span>
+            </div>
+            <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="btn btn-danger logout-btn" OnClick="btnLogout_Click" />
+        </div>
+
+
+        <%-- content --%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <%-- footer --%>
+        
+
+    </form>
+    <footer class="gail-footer">
+        <div class="footer-bottom">
+            <p>&copy;  GAIL (India) Limited. All Rights Reserved.</p>
+        
+        </div>
+    </footer>
+</body>
+</html>

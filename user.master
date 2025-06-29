@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="user.master.cs" Inherits="GAIL_QUIZ1.user" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <link href="user_master.css" rel="stylesheet" />
+        <asp:ContentPlaceHolder ID="head" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <!-- Dark Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">User Panel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_dashboard.aspx" runat="server">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_attemptquiz.aspx" runat="server">Attempt Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_result.aspx" runat="server">Quiz Results</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+    </asp:ContentPlaceHolder>
+</div>
+
+</asp:Content>
+
+

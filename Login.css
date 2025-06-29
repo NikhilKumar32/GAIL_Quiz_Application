@@ -1,0 +1,108 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #1e1e2f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 40px;
+    background: #2a2a3c;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeInSlide 0.8s ease-in-out;
+    transition: transform 0.3s ease;
+    color: #ffffff;
+}
+
+    .login-container:hover {
+        transform: translateY(-4px);
+    }
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 35px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+.form-group {
+    margin-bottom: 28px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 15px;
+        color: #cccccc;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 16px 14px;
+        font-size: 16px;
+        background: #3a3a50;
+        border: 1px solid #4f4f67;
+        border-radius: 10px;
+        color: #ffffff;
+        transition: all 0.3s ease;
+    }
+
+        .form-group input::placeholder {
+            color: #aaaaaa;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #5dade2;
+            outline: none;
+            background-color: #44445a;
+        }
+
+button {
+    width: 100%;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #5dade2, #2980b9);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+    button:hover {
+        background: linear-gradient(135deg, #2980b9, #1f5a8d);
+        transform: scale(1.02);
+    }
+
+asp\:Label {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff6b6b;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

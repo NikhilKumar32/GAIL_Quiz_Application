@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="GAIL_QUIZ1.admin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="admin_master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <%-- Main Menu --%>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Admin Panel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar"
+                aria-controls="adminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="adminNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <asp:HyperLink CssClass="nav-link" NavigateUrl="~/admin_dashboard.aspx" runat="server">Quiz Requests</asp:HyperLink>
+                    </li>
+                    <li class="nav-item">
+                        <asp:HyperLink CssClass="nav-link" NavigateUrl="~/admin_activequiz.aspx" runat="server">Active Quizzes</asp:HyperLink>
+                    </li>
+                    <li class="nav-item">
+                        <asp:HyperLink CssClass="nav-link" NavigateUrl="~/admin_result.aspx" runat="server">Quiz Results</asp:HyperLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <%-- content --%>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

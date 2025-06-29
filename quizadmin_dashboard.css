@@ -1,0 +1,111 @@
+﻿.grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+    .grid th, .grid td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .grid th {
+        background-color: #f2f2f2;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .grid tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .grid tr:hover {
+        background-color: #f1f1f1;
+    }
+
+.proceed-btn, .edit-btn {
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.proceed-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.arrow-btn {
+    display: block;
+    color: #007bff;
+    text-decoration: underline;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.decline-reason {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.desc-ellipsis {
+    display: block;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    padding: 2px;
+    color: #333;
+}
+
+.desc-expanded {
+    white-space: normal !important;
+    overflow: visible !important;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
+    max-width: 300px;
+    word-wrap: break-word;
+    z-index: 10;
+    position: relative;
+}
+
+.desc-ellipsis {
+    display: block;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    padding: 2px;
+    color: #333;
+}
+
+.desc-expanded {
+    white-space: normal !important;
+    overflow: visible !important;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
+    max-width: 300px;
+    word-wrap: break-word;
+    z-index: 10;
+    position: relative;
+}
